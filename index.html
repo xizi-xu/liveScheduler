@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Scheduler</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JS -->
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBSjBaRrjJhi0AHZx1KtuYPOVdO9miD5Z4",
+        authDomain: "livescheduler-bf218.firebaseapp.com",
+        databaseURL: "https://livescheduler-bf218.firebaseio.com",
+        storageBucket: "livescheduler-bf218.appspot.com",
+      };
+      firebase.initializeApp(config);
+    </script>
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+    <!-- AngularJS App -->
+    <script src="app.js"></script>
+</head>
+
+<body>
+  <div class="container" ng-app="scheduler" ng-controller="mainCtrl">
+    <div class="page-header text-center">
+      <h1> Schedule Events Live!!</h1>
+    </div>
+
+    <div class="row times">
+      <div class="col-xs-4 text center">
+        <h2>Monday</h2>
+        <div class="time-slot">
+          <input type="checkbox" id="monday-time">
+          <label for="monday-time">9:00am</label>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center">
+      <a href="#" class="btn btn-primary">Reset</a>
+    </p>
+
+  </dvi>
+</body>
