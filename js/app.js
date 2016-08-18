@@ -1,1 +1,1 @@
-angular.module("scheduler", ['firebase']);
+var app = angular.module("scheduler", ['firebase']);
